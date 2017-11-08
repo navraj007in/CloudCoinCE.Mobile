@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CloudCoinCE.Mobile"
+             x:Class="CloudCoinCE.Mobile.MainPage">
+    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+        <Label Text="Welcome to Xamarin Forms!" x:Name="lblRAIDA"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+        <Button Text="Import" x:Name="cmdImport" Clicked="cmdImport_Clicked" IsEnabled="False"/>
+        <Button Text="Bank" x:Name="cmdBank" Clicked="cmdBank_Clicked" />
+        <Button Text="Export" x:Name="cmdExport" Clicked="cmdExport_Clicked" />
+
+    </StackLayout>
+</ContentPage>

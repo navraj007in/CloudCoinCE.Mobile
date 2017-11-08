@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>371e5003-fa3c-456a-9500-2e3e11f71379</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CloudCoinCE.Mobile</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)CoinOps.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Banker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\CloudCoin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\CoinUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Config.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\CoreLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\DetectionAgent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Exporter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\FileUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\FixitHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Frack_Fixer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\IFilePicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Importer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\MultiDetect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\ProgressEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\RAIDA.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\RAIDA_Status.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Receipt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\ReceitDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Response.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Stack.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FileData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Mailer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
